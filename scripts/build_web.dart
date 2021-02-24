@@ -5,15 +5,15 @@ void main() async {
   Shell shell = Shell();
   await shell.run('flutter build web');
   // Delete public folder if exists
-  if(Directory('public').existsSync()) {
-    Directory('public').deleteSync(recursive: true);
+  if(Directory('docs').existsSync()) {
+    Directory('docs').deleteSync(recursive: true);
   }
   // Create public folder
-  Directory('public').createSync();
+  Directory('docs').createSync();
   // Copy assets to the newly built build folder
   await copyDirectory(Directory('assets'), Directory('build/web/assets'));
   // Copy all build files to public folder
-  await copyDirectory(Directory('build/web'), Directory('public'));
+  await copyDirectory(Directory('build/web'), Directory('docs'));
   // Success
   print('Build for web success.');
 }
