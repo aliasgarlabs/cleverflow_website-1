@@ -20,7 +20,7 @@ class Features extends StatelessWidget {
         ReduceFriction(), //3rd Row
         CollaborateTogether(), //4th Row
         DesignedForPrivacy(), //5th Row
-        buildconnectedteams(), //6th Row
+        BuildConnectedTeams(), //6th Row
       ]),
     ));
   }

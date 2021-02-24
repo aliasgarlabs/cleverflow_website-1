@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+import 'dart:html';
 
-class buildconnectedteams extends StatelessWidget {
+import 'package:flutter/material.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
+
+class BuildConnectedTeams extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
@@ -37,11 +40,22 @@ class buildconnectedteams extends StatelessWidget {
                           children: [
                             Column(
                               children: [
+                                //ImageIcon(AssetImage('assets/hangouttogethericon.svg'),),
+
                                 Text(
-                                    'This means that when you want to check in on someone, '
-                                        'you can just alk upto them. \nNo more back and forth on'
-                                        ' Slack or Zoom scheduling nightmares.',
-                                    textAlign: TextAlign.center,
+                                    'Hang out together',
+                                    textAlign: TextAlign.left,
+                                    style: TextStyle(
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.bold,
+                                        height: 1.5,
+                                        letterSpacing: 0.5)),
+                                Text(
+                                    'Teamflow is your virtual office, shared '
+                                        '\nonly with the people you invite. Invite '
+                                        '\nyour co-workers or send a link to external '
+                                        '\nguests to meet',
+                                    textAlign: TextAlign.left,
                                     style: TextStyle(
                                         fontSize: 20.0,
                                         height: 1.5,
@@ -50,7 +64,7 @@ class buildconnectedteams extends StatelessWidget {
                             ),
                           ],
                         ),  //Icon and text Row1
-                        Row(
+                 /*       Row(
                           children: [
                             Text(
                                 'This means that when you want to check in on someone, '
@@ -75,7 +89,7 @@ class buildconnectedteams extends StatelessWidget {
                                     height: 1.5,
                                     letterSpacing: 0.5)),
                           ],
-                        )  //Icon and Text Row3
+                        )*/  //Icon and Text Row3
                       ])),
             ))
       ],
