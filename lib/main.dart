@@ -7,7 +7,7 @@ import './login.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
-    fontFamily: 'Calibri Light',
+    fontFamily: 'sans-serif',
   ), home: MyApp()));
 }
 

@@ -7,6 +7,7 @@ import './reducefriction.dart';
 import './collaboratetogether.dart';
 import './designedforprivacy.dart';
 import './buildconnectedteams.dart';
+import './whatpeoplesay.dart';
 
 class Features extends StatelessWidget {
   @override
@@ -20,7 +21,8 @@ class Features extends StatelessWidget {
         ReduceFriction(), //3rd Row
         CollaborateTogether(), //4th Row
         DesignedForPrivacy(), //5th Row
-        BuildConnectedTeams(), //6th Row
+        BuildConnectedTeams(),
+        //WhatPeopleSay(),//6th Row
       ]),
     ));
   }
