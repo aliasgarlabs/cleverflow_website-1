@@ -14,6 +14,13 @@ void main() async {
   await copyDirectory(Directory('assets'), Directory('build/web/assets'));
   // Copy all build files to public folder
   await copyDirectory(Directory('build/web'), Directory('docs'));
+
+  // Create CNAME file
+  File cnameFile = await File('docs/CNAME').create();
+
+  // Write the subdomain to the CNAME file
+  await cnameFile.writeAsString('beta.cleverflowhq.com');
+  
   // Success
   print('Build for web success.');
 }
